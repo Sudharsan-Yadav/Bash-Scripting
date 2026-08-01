@@ -1,0 +1,66 @@
+#! /bin/bash
+echo "Enter the File Path:"
+read file_path
+
+if [[ -r $file_path ]];
+then
+        echo "File has read permission"
+else
+        echo "File does not has read permission"
+fi
+
+Output1:
+Enter the File Path:
+/root/new.sh
+File has read permission
+
+Output2:
+Enter the File Path:
+/root/dog
+File does not has read permission
+
+---------------------------------------------------------------
+
+#! /bin/bash
+echo "Enter the File Path:"
+read file_path
+
+if [[ -w $file_path ]];
+then
+        echo "File has write permission"
+else
+        echo "File does not has write permission"
+fi
+
+Output1:
+Enter the File Path:
+/root/linux/aws.txt
+File has write permission
+
+Output2:
+Enter the File Path:
+/root/linux/devops
+File does not has write permission
+
+---------------------------------------------------------------
+
+#! /bin/bash
+echo "Enter the File Path:"
+read file_path
+
+if [[ -x $file_path ]];
+then
+        echo "File has execute permission"
+else
+        echo "File does not has execute permission"
+fi
+
+Output1:
+Enter the File Path:
+/root/flm.sh
+File has execute permission
+
+Output2:
+Enter the File Path:
+/root/linux/aws.txt
+File does not has execute permission
