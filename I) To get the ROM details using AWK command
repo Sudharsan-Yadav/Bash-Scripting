@@ -1,0 +1,16 @@
+#! /bin/bash
+
+echo "Available space: $(df -h | awk '/dev\/nvme0n1p1/ {print $4}')"
+
+Output:
+Available space: 8.0G
+8.7M
+
+---------------------------------------------------------------------------------------------
+
+#! /bin/bash
+
+echo "Available space: $(df -h | awk '$1=="/dev/nvme0n1p1" {print $4}')"
+
+Output:
+Available space: 8.0G
