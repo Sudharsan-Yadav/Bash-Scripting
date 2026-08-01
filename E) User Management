@@ -1,0 +1,40 @@
+#! /bin/bash
+user=$1
+action=$2
+
+case $action in
+        "add")
+                useradd $user;;
+        "modify")
+                usermod -s /bin/bash $user;;
+        "delete")
+                userdel -r $user;;
+        *)
+                echo "Usage: sh $0 username (add | modify | delete}"
+                exit 1;;
+esac
+
+
+Output1: sh sai.sh devops hi
+Usage: sh sai.sh username (add | modify | delete}
+
+Output2: sh sai.sh
+Usage: sh sai.sh username (add | modify | delete}
+
+Output3:
+sh sai.sh sudhan add
+
+id sudhan
+uid=1001(sudhan) gid=1001(sudhan) groups=1001(sudhan)
+
+Output4:
+sh sai.sh sudheer add
+
+id sudheer
+uid=1001(sudheer) gid=1001(sudheer) groups=1001(sudheer)
+
+Output5:
+sh sai.sh sudheer delete
+
+id sudheer
+id: ‘sudheer’: no such user
