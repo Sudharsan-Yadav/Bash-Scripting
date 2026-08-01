@@ -1,0 +1,44 @@
+Passing variables as a static:
+
+#! /bin/bash
+person="Sudharsan"
+tool="Linux"
+echo -e "My name is $person,\nI am learning\t$tool & shell scripting"
+
+Output:
+My name is Sudharsan,
+I am learning   Linux & shell scripting
+
+--------------------------------------------------------------------------------
+
+Passing variables as a dynamic:
+
+#! /bin/bash
+echo "Please enter your username:"
+read abc
+echo "Please enter your password:"
+read pass
+echo "Your username is $abc and your password is $pass"
+
+Output:
+Please enter your username:
+Sudharsan
+Please enter your password:
+admin@123
+Your username is Sudharsan and your password is admin@123
+
+--------------------------------------------------------------------------------
+
+Passing variables as a dynamic with password invisible:
+
+#! /bin/bash
+echo "Please enter your username:"
+read abc
+read -sp "Enter your password" pass
+echo -e "\nYour username is $abc and your password is $pass"
+
+Output:
+Please enter your username:
+Sudharsan
+Enter your password
+Your username is Sudharsan and your password is admin@123
