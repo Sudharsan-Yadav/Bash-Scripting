@@ -1,0 +1,10 @@
+#! /bin/bash
+
+src=/root/mylogs/app.log
+max_size=1000000
+
+if [[ $(wc -c < "$src") -gt $max_size ]];
+then
+        mv $src $src.backup
+        touch "$src"
+fi
