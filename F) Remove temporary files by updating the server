@@ -1,0 +1,10 @@
+#! /bin/bash
+
+sudo yum update -y
+rm -rf /tmp/*
+
+Output:
+Last metadata expiration check: 1:03:30 ago on Sat Aug  1 11:01:08 2026.
+Dependencies resolved.
+Nothing to do.
+Complete!
