@@ -1,0 +1,27 @@
+#! /bin/bash
+abc="Sudhar"
+xyz="Sudheer"
+if [[ $abc == $xyz ]];
+then
+        echo "Both are same"
+else
+        echo "Both are not same"
+fi
+
+Output:
+Both are not same
+
+------------------------------------------------------------------
+
+#! /bin/bash
+abc="Sudhar"
+xyz="Sudheer"
+if [[ $abc != $xyz ]];
+then
+        echo "The condition is satisfied"
+else
+        echo "The condition is not satisfied"
+fi
+
+Output:
+The condition is satisfied
