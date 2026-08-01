@@ -1,0 +1,22 @@
+#! /bin/bash
+echo "My name is Sudharsan, I am learning linux & shell scripting"
+
+Output:
+My name is Sudharsan, I am learning linux & shell scripting
+
+----------------------------------------------------------------------------------------------
+
+#! /bin/bash
+echo -e "My name is Sudharsan,\nI am learning\tLinux & shell scripting"
+
+Output:
+My name is Sudharsan,
+I am learning   Linux & shell scripting
+
+----------------------------------------------------------------------------------------------
+
+#! /bin/bash
+echo "My name is Sudharsan,\nI am learning\tLinux & shell scripting"
+
+Output:
+My name is Sudharsan,\nI am learning\tLinux & shell scripting
