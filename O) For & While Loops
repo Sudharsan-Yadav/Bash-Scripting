@@ -1,0 +1,55 @@
+#! /bin/bash
+
+for i in {1..10}
+do
+        echo "The value is $i"
+done
+
+Output:
+The value is 1
+The value is 2
+The value is 3
+The value is 4
+The value is 5
+The value is 6
+The value is 7
+The value is 8
+The value is 9
+The value is 10
+
+------------------------------------------------------------------
+
+#! /bin/bash
+
+count=0
+while [[ $count -lt 5 ]];
+do
+        echo $count
+        count=$((count+1))
+done
+
+Output:
+0
+1
+2
+3
+4
+
+------------------------------------------------------------------
+
+#! /bin/bash
+
+count=0
+while [[ $count -le 5 ]];
+do
+        echo $count
+        count=$((count+1))
+done
+
+Output:
+0
+1
+2
+3
+4
+5
