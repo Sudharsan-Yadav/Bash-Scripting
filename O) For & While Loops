@@ -25,7 +25,7 @@ count=0
 while [[ $count -lt 5 ]];
 do
         echo $count
-        count=$((count+1))
+        count=$((count+1))  (OR)   ((count++))   (OR)   ((count+=1))
 done
 
 Output:
@@ -43,7 +43,7 @@ count=0
 while [[ $count -le 5 ]];
 do
         echo $count
-        count=$((count+1))
+        count=$((count+1))  (OR)   ((count++))   (OR)   ((count+=1))
 done
 
 Output:
